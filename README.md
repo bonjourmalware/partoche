@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/partoche_demo.gif" height="350px"/>
+    <img style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);" src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/partoche_demo.gif" height="350px"/>
 <p align="center">
 
 # Table of Contents
@@ -76,7 +76,7 @@ Note that the updated version is saved on another file by default; you can use t
   + `./venv/bin/python enrich.py --in-place --data melody.ndjson`
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/enrich_demo.jpg" width="75%"/>
+    <img style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1); src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/enrich_demo.jpg" width="75%"/>
 <p align="center">
 
 ## Elasticsearch
