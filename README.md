@@ -1,7 +1,7 @@
 <p align="center">
     <h1 align="center">🎼 Partoche</h1>
     <p align="center">Terminal based pew pew map that feeds on <a href="https://github.com/bonjourmalware/melody">Melody logs</a></p>
-    <img src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/partoche_demo.gif" height="350px" style="display:block; margin:auto;"/>
+    <img src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/partoche_demo.gif" width="642px" height="350px"/>
 </p>
 
 # Table of Contents
