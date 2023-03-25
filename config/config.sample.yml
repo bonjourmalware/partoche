@@ -1,0 +1,80 @@
+elasticsearch:
+  host: "CHANGEME"  # Your exposed Elasticsearch instance e.g. 192.168.1.16
+  port: 9200  # Your exposed Elasticsearch instance e.g. 9200
+  api:  # API ID and key that have been granted access to the indexes
+    id: "CHANGEME"
+    key: "CHANGEME"
+
+  # Changing this query template will most likely break things
+  # Tested with Elasticsearch 7.x and below
+  fetch_query: |
+    {
+      "_source": ["timestamp", "session", "geoip.latitude", "geoip.longitude", "geoip.city_name", "geoip.as_org", "geoip.asn", "geoip.country_name", "geoip.country_code3", "ip_rep", "src_ip", "dst_port", "matches"],
+      "query":
+      {
+          "bool":
+          {
+              "filter":
+              [
+                  {
+                      "match_all":
+                      {}
+                  },
+                  {
+                      "range":
+                      {
+                          "timestamp":
+                          {
+                              "gte": "!!TIMERANGE!!",
+                              "lte": "now",
+
+                              "format": "strict_date_optional_time"
+                          }
+                      }
+                  }
+              ]
+          }
+      }
+    }
+  interval: "5m"  # Accepted formats are s(econds), m(inutes), h(ours), d(ays)
+
+hit_zone: false
+hit_radius: 5
+fps: 30
+
+## Emojis
+emoji: true
+emoji_flag: true  # some terminal such as the gnome-terminal can't display flag emoji. Kitty is on terminal supporting it
+pin_emoji: "📍"
+reputation_emoji:
+  "👹":
+    - known attacker
+    - bad reputation
+  "🥸":
+    - anonymizer
+  "🤖":
+    - bot
+    - crawler
+  "🔎":
+    - mass scanner
+  "₿":
+    - bitcoin node
+  "📨":
+    - spam
+    - form spammer
+  "🧅":
+    - tor exit node
+  "🧟":
+    - compromised
+
+matches_emoji:
+  "⚡":
+    - cve
+
+profile_emoji:
+  "💣":
+    - dropper
+
+action_emoji:
+  "🔑":
+    - login
