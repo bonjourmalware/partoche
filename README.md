@@ -3,9 +3,23 @@
     <p align="center">Terminal based pew pew map that feeds on <a href="https://github.com/bonjourmalware/melody">Melody logs</a></p>
 </p>
 
-<p align="center">
-    <img style="border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1)" src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/partoche_demo.gif" height="350px"/>
-<p align="center">
+<svg fill="none" viewBox="0 0 700 350" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+            img{
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);
+            }
+            </style>
+
+            <p align="center">
+                <img src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/partoche_demo.gif" height="350px"/>
+            <p align="center">
+        </div>
+    </foreignObject>
+</svg>
+
 
 # Table of Contents
 - [Usage](#usage)
