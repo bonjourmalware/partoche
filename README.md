@@ -76,7 +76,7 @@ Note that the updated version is saved on another file by default; you can use t
   + `./venv/bin/python enrich.py --in-place --data melody.ndjson`
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/enrich_demo.jpg" height="350px"/>
+    <img src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/enrich_demo.jpg"/>
 <p align="center">
 
 ## Elasticsearch
