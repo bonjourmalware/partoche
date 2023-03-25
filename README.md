@@ -75,6 +75,10 @@ Note that the updated version is saved on another file by default; you can use t
 + Save the updated rows directly to `melody.ndjson`: 
   + `./venv/bin/python enrich.py --in-place --data melody.ndjson`
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/bonjourmalware/partoche/master/readme/enrich_demo.jpg" height="350px"/>
+<p align="center">
+
 ## Elasticsearch
 The program can also feed from an Elasticsearch instance to which live Melody logs are sent. In this scenario, the `interval` specified in the `config/config.yml` file will be used to query the corresponding timerange. The collected data will be automatically refreshed for a continuous display.
 
