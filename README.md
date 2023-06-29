@@ -85,7 +85,7 @@ The program can also feed from an Elasticsearch instance to which live Melody lo
 Note that to use this mode, you must create an API access with access to the indexes handling Melody data and update the `config/config.yml` file accordingly.
 
 # Limitations
-Partoche has been developed and tested with Elasticsearch 7.x.
+Partoche has been developed and tested with Elasticsearch 7.x and Python 3.8.
 
 # Reputation emojis
 These can be customized in the `config/config.yml` file.
