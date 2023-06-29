@@ -56,7 +56,7 @@ reqs:
 	./venv/bin/pip install -r requirements.txt
 
 venv:
-	virtualenv ./venv --python=$(which python3)
+	virtualenv ./venv --python=$(shell which python3)
 
 ## iprep : Pull IP reputation data
 iprep:
