@@ -30,12 +30,16 @@
 2) [OPTIONAL] Install virtual environment
    + `virtualenv ./venv --python=$(which python3)`
    + or `make venv`
-3) Install requirements
+3) Install Python requirements
    + `./venv/bin/pip install -r requirements.txt`
    + or `make reqs`
+   + Note that the Elasticsearch package version is fixed to 7.10.0 in the `requirements.txt` file. You need to install the right version if your instance uses another one. Use `./venv/bin/pip install elasticsearch==X.X.X` to install the right package, e.g. `./venv/bin/pip install elasticsearch==7.9.0` for Elasticsearch 7.9.0.
 4) Copy the default config file
    + `cp config/config.sample.yml config/config.yml`
-5) Run the program using the demo dataset
+5) Install `asciiworld` (see the "Requirements" section)
+6) Pull the GeoIP dataset (see the "Requirements" section)
+7) (OPTIONAL) Pull and consolidate the reputation dataset using the `listbot` script (see the "Requirements" section)
+8) Run the program using the demo dataset
    + `./venv/bin/python partoche.py --demo`
    + or `make demo`
 
@@ -46,7 +50,7 @@ A few things are needed before starting Partoche for the first time.
 Partoche uses `asciiworld` to generate the ascii map. It needs to be installed and in path before running the program. Refer to [these instructions](https://www.uninformativ.de/git/asciiworld/file/README.html) to install it. 
 
 ## GeoIP
-Partoche uses the `GeoLite2-ASN` and `GeoLite2-City` MaxMind databases to gather coordinates for each hit. You need to pull them in the data/geoip folder before starting.
+Partoche uses the `GeoLite2-ASN` and `GeoLite2-City` MaxMind databases to get coordinates for each hit. You need to pull them in the data/geoip folder before starting.
 
 Refer to [MaxMind's documentation](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=en) to obtain them (it's free).
 
